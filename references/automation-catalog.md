@@ -11,7 +11,7 @@ This catalog summarizes enabled workflow types observed in one OpenClaw installa
 | Evening family brief | Daily | Next-day schedule, preparation, meals, weather, exceptions | Preserve full detail requirements; one send attempt per channel unless a safe retry is proven |
 | Weekend weather note | Weekends | Short current-day forecast and practical tip | Use configured source and fallback; never forward raw command output |
 | Activity reminder | Weekly/event-based | Remind about upcoming activity and required items | Verify date/time from private calendar/config; use approved contacts only |
-| Local face-model refresh | Periodic | Refresh local recognition reference from approved confirmed examples | Keep embeddings/cache local; do not auto-enroll uncertain/group images; no media in Git |
+| Local face-model refresh | Quarterly configured | Refresh local recognition reference from recent approved examples using a growth-aware three-month bucket scheme | Human approval; high-confidence/manual-baseline gate; bounded refs, backup/rollback; local caches only. Details and schedule verification: references/face-model-and-growth.md |
 | Market summary | Weekdays | Read-only market data and concise digest | No trade/order action; state freshness and source failures |
 | Service discount report | Daily | Read-only local history and outcome summary | Do not expose account/customer identifiers; distinguish unknown/error from failure |
 | Travel-seat monitor | Time-boxed recurring monitor | Search configured outbound/return conditions and report viable pairs | Never reserve/pay automatically; stop and alert on automation detection/access block |

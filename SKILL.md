@@ -29,4 +29,4 @@ Use this skill to implement or troubleshoot recurring workflows in references/au
 - Travel availability: monitor only; do not reserve/pay automatically. Stop if the service detects automation or blocks access.
 - Local memory maintenance: summarize only approved local notes; do not export private memory.
 
-See references/automation-catalog.md, references/privacy-and-security.md, and templates/private-config.example.yaml.
+See references/automation-catalog.md, references/face-model-and-growth.md, references/privacy-and-security.md, and templates/private-config.example.yaml.
