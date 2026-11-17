@@ -5,6 +5,11 @@ if grep -RInE --exclude-dir=.git --exclude=validate-redaction.sh '(sk-[A-Za-z0-9
   echo 'Potential secret or personal contact data found; review before publishing.' >&2
   exit 1
 fi
+# Household identity / bot labels must stay out of the portable skill.
+if grep -RInE --exclude-dir=.git --exclude=validate-redaction.sh '(나윤|나린|나윤맘|nayunmom|nayun|민구|다은|임다은|평택|장당|숲속향기|꿈꾸는숲|kidsnote|MG_Drive|workspace-nayun)' "$ROOT"; then
+  echo 'Potential household identity or bot-label data found; review before publishing.' >&2
+  exit 1
+fi
 for name in .env auth-profiles.json credentials token secret; do
   if find "$ROOT" -name "$name" -print | grep -q .; then
     echo "Sensitive/runtime artifact found: $name" >&2
