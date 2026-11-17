@@ -5,15 +5,35 @@ schedule:
   notice_scan: <PRIVATE_NOTICE_SCAN_CADENCE>
   family_brief: <PRIVATE_BRIEF_CADENCE>
   album_review: <PRIVATE_ALBUM_CADENCE>
+  face_refresh: <PRIVATE_FACE_REFRESH_CADENCE>
 channels:
   family_primary: <PRIVATE_CHANNEL_REFERENCE>
   owner_alert: <PRIVATE_CHANNEL_REFERENCE>
+  owner_review: <PRIVATE_CHANNEL_REFERENCE>
 credentials:
   school_login: <SECRET_REF_SCHOOL_LOGIN>
 storage:
   approved_media_root: <PRIVATE_ARCHIVE_ROOT>
   local_state_root: <PRIVATE_STATE_ROOT>
+  face_db: <PRIVATE_FACE_DB_PATH>
+  face_cache: <PRIVATE_FACE_CACHE_PATH>
+browser:
+  preferred_bridge: <PRIVATE_BROWSER_BRIDGE>
+  host_profile_optional: <PRIVATE_HOST_PROFILE_OR_EMPTY>
+face:
+  threshold: 0.55
+  margin: 0.10
+  unsure_low: 0.45
+  auto_refresh_min_score: 0.65
+  negative_label: __negative__
 verification:
   grace_seconds: 30
   require_channel_evidence: true
   retry_ambiguous_send: false
+  update_seen_on_send_record: true
+  silent_when_no_new_album: true
+brief:
+  style: secretary
+  require_where_and_what_for_special_activities: true
+  include_full_meals: true
+  include_near_term_days: 3
