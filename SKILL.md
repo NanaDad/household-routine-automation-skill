@@ -57,4 +57,4 @@ When composing morning/evening briefs, review and include only the items that ap
 - Travel availability: monitor only; do not reserve/pay automatically.
 - Local memory maintenance: summarize only approved local notes; do not export private memory.
 
-See `references/automation-catalog.md`, `references/face-model-and-growth.md`, `references/privacy-and-security.md`, and `templates/private-config.example.yaml`.
+See `references/automation-catalog.md`, `references/face-model-and-growth.md`, `references/face-extract-store-use.md` (detect → 512-D embed → local store → match/refresh), `references/privacy-and-security.md`, and `templates/private-config.example.yaml`.

@@ -13,7 +13,12 @@ A portable OpenClaw skill for recurring household and personal-assistant workflo
 
 ## Face recognition (local only)
 
-Documents the InsightFace `buffalo_l` local classifier path, growth-aware reference refresh, negative/lookalike veto, and operator-locked score bands (confirmed ≥ 0.55, needs-confirm 0.45–0.55, ignore below 0.45). No embeddings, photos, child names, or archive paths are stored in this repository.
+Includes:
+- model provenance (`buffalo_l` detect + 512-D embeddings)
+- **how features are extracted, stored, and used** (`references/face-extract-store-use.md`)
+- growth refresh, negative/lookalike veto, locked score bands (confirmed ≥ 0.55, needs-confirm 0.45–0.55, ignore below 0.45)
+
+No embeddings, photos, child names, or archive paths are stored in this repository.
 
 ## Privacy design
 
