@@ -1,4 +1,4 @@
-# Household Routine Automation Skill
+# Kindergarten Parent Assistant Skill
 
 Portable OpenClaw skill for **kindergarten / preschool parent routines** and related household assistant workflows.
 

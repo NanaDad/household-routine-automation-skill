@@ -1,9 +1,9 @@
 ---
-name: household-routine-automation
+name: kindergarten-parent-assistant
 description: Kindergarten/preschool parent automation skill: school notice+attachment reading, school album face sorting with human review, secretary-style daily briefs (where+what, prep, meals, deadlines), local face-embedding maintenance, plus optional weather/market/travel monitors. Use when building or recovering these child-care routines. Never store private runtime values in this skill.
 ---
 
-# Household routine automation (child-care core)
+# Kindergarten parent assistant
 
 Portable procedures for a **parent assistant** that watches school communications and helps run the child's day. Not an export of any household's live schedule, credentials, messages, media, or account configuration.
 
