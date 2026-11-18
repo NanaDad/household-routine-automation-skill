@@ -13,3 +13,8 @@ credentials/
 .status/
 media/
 tmp/
+tools/kid-face-sort/.venv/
+**/*.npz
+**/*.onnx
+**/*.sqlite
+**/embeddings.*

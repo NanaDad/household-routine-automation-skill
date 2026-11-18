@@ -52,7 +52,7 @@ Include only applicable items, written clearly:
   - ignore < 0.45 (do not lower the floor to expand candidates)
 - Split certain vs needs-confirm; ask the owner on the owner channel for pass/exclude.
 - Owner explicit correction overrides prior assistant judgments immediately.
-- See `references/face-extract-store-use.md` for detect → 512-D embed → store → match/refresh.
+- Runnable CLI: `tools/kid-face-sort/`. See `references/face-extract-store-use.md` for detect → 512-D embed → store → match/refresh.
 
 ## Workflow selection
 

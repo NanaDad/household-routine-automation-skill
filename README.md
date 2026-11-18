@@ -2,7 +2,7 @@
 
 Portable OpenClaw skill for **kindergarten / preschool parent routines** and related household assistant workflows.
 
-This repository is procedure-only. It does **not** contain any family's live config, credentials, child identity, school name, photos, or face embeddings.
+This repository includes OpenClaw skill procedures **and** a runnable local face-sort tool under `tools/`. It does **not** contain any family's live config, credentials, child identity, school name, photos, face embeddings, or model weight files.
 
 ## What this skill is mainly for
 
@@ -32,6 +32,10 @@ Secondary optional families (same skill, less central): read-only market/service
 
 ## Face recognition (local only)
 
+Runnable tool is included under **`tools/kid-face-sort/`** (code only; no models/embeddings/photos in git).
+
+### Docs
+
 - Detect faces → **512-D embeddings** → store vectors locally (not photos in the DB)
 - Match with cosine similarity + optional time-bucket weighting
 - Locked bands: confirmed ≥ 0.55 · needs-confirm 0.45–0.55 · ignore < 0.45
@@ -42,6 +46,7 @@ Secondary optional families (same skill, less central): read-only market/service
 | Path | Purpose |
 |---|---|
 | `SKILL.md` | Entry procedure + operating rules |
+| `tools/kid-face-sort/` | Runnable local face classifier (code only) |
 | `references/automation-catalog.md` | Workflow families and completion gates |
 | `references/face-model-and-growth.md` | Model provenance + growth refresh |
 | `references/face-extract-store-use.md` | Extract → store → use pipeline |

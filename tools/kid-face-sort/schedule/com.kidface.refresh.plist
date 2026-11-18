@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.kidface.refresh</string>
+  <key>ProgramArguments</key><array>
+    <string>/bin/bash</string><string>/Users/YOURNAME/kid-face-sort/schedule/monthly_refresh.sh</string>
+  </array>
+  <key>EnvironmentVariables</key><dict>
+    <key>KIDFACE_NAME</key><string>지우</string>
+    <key>KIDFACE_PHOTOS</key><string>/Users/YOURNAME/Pictures/kids</string>
+  </dict>
+  <!-- 매월 1일 10:00 (잠자기 중이었으면 깨어난 뒤 실행) -->
+  <key>StartCalendarInterval</key><dict><key>Day</key><integer>1</integer><key>Hour</key><integer>10</integer><key>Minute</key><integer>0</integer></dict>
+  <key>StandardOutPath</key><string>/tmp/kidface-refresh.log</string>
+  <key>StandardErrorPath</key><string>/tmp/kidface-refresh.err</string>
+</dict></plist>
