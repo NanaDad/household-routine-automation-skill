@@ -1,3 +1,4 @@
+# secrets / runtime
 .env
 .env.*
 !.env.example
@@ -14,7 +15,14 @@ credentials/
 media/
 tmp/
 tools/kid-face-sort/.venv/
-**/*.npz
 **/*.onnx
 **/*.sqlite
-**/embeddings.*
+
+# face DBs blocked by default
+**/embeddings*.npz
+**/*.npz
+
+# allow empty template only
+!tools/kid-face-sort/templates/
+!tools/kid-face-sort/templates/**
+!tools/kid-face-sort/templates/embeddings.empty.npz
