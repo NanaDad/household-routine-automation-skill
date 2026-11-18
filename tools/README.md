@@ -7,12 +7,14 @@ Local-only child photo face classifier (InsightFace `buffalo_l`).
 - CLI: enroll / sort / tune / refresh / rollback / cache
 - No photos, embeddings, or household identity are committed here
 
-### Quick start
+### Quick start (makes face extract/use actually work)
 ```bash
 cd tools/kid-face-sort
-bash install.sh
+bash install.sh   # venv + deps + buffalo_l model download + empty DB
 ./kidface.sh enroll <label> /path/to/reference-photos/
-./kidface.sh sort /path/to/album -o /path/to/out --mode dry -t 0.55 --margin 0.10
+./kidface.sh sort /path/to/album -o /tmp/out --mode dry -t 0.55 --margin 0.10
 ```
 
-See `tools/kid-face-sort/README.md` and `references/face-extract-store-use.md`.
+`install.sh` downloads public model weights to `~/.insightface/models/` and seeds an empty DB at `~/.kidface/embeddings.npz`. No household face data is in git.
+
+See `tools/kid-face-sort/QUICKSTART.md`, `tools/kid-face-sort/README.md`, and `references/face-extract-store-use.md`.
